@@ -1,5 +1,6 @@
 package com.example.orcafacil
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +13,10 @@ class MainActivity : AppCompatActivity() {
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding.btnCriarOrcamento.setOnClickListener {
+            val intent = Intent(this, OrcamentoActivity::class.java)
+            startActivity(intent)
+        }
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
