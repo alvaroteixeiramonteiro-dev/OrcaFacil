@@ -13,4 +13,11 @@
     <string name="label_despesas">Despesas adicionais (€)</string>
     <string name="hint_despesas">Ex.: 10 ou 0 se não existirem</string>
     <string name="calcular_orcamento">Calcular orçamento</string>
+    <string name="erro_descricao_obrigatoria">Introduz a descrição do serviço</string>
+    <string name="erro_horas_invalidas">Introduz um número de horas válido,
+        superior a zero.</string>
+    <string name="erro_preco_hora_invalido">Introduz um preço por hora válido,
+        superior a zero.</string>
+    <string name="erro_despesas_invalidas">Introduz despesas válidas,
+        iguais ou superiores a zero.</string>
 </resources>
