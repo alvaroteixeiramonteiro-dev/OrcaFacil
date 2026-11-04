@@ -3,4 +3,14 @@
     <string name="inicio_descricao">Calcula uma estimativa para o teu serviço com base nas horas 
         de trabalho e nas despesas adicionais.</string>
     <string name="criar_orcamento">Criar orçamento</string>
+    <string name="orcamento_titulo">Criar orçamento</string>
+    <string name="label_descricao">Descrição do serviço</string>
+    <string name="hint_descricao">Ex.: Desenvolvimento de uma página web</string>
+    <string name="label_horas">Horas previstas</string>
+    <string name="hint_horas">Ex: 4</string>
+    <string name="label_preco_hora">Preço por hora (€)</string>
+    <string name="hint_preco_hora">Ex: 15</string>
+    <string name="label_despesas">Despesas adicionais (€)</string>
+    <string name="hint_despesas">Ex.: 10 ou 0 se não existirem</string>
+    <string name="calcular_orcamento">Calcular orçamento</string>
 </resources>
