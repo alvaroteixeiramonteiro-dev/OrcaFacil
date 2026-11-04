@@ -54,7 +54,6 @@
             android:inputType="numberDecimal" />
 
         <TextView
-            android:id="@+id/etPrecoHora"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -63,10 +62,11 @@
             android:labelFor="@id/etPrecoHora" />
         
         <EditText
+            android:id="@+id/etPrecoHora"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/hint_preco_hora"
+            android:minHeight="48dp"
+            android:hint="@string/hint_preco_hora"
             android:inputType="numberDecimal"/>
 
         <TextView
@@ -81,8 +81,8 @@
             android:id="@+id/etDespesas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/hint_despesas"
+            android:layout_marginTop="48dp"
+            android:hint="@string/hint_despesas"
             android:inputType="numberDecimal"/>
 
         <Button
