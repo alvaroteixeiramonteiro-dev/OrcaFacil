@@ -13,10 +13,6 @@ class MainActivity : AppCompatActivity() {
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding.btnCriarOrcamento.setOnClickListener {
-            val intent = Intent(this, OrcamentoActivity::class.java)
-            startActivity(intent)
-        }
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
@@ -24,6 +20,10 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        binding.btnCriarOrcamento.setOnClickListener {
+            val intent = Intent(this, OrcamentoActivity::class.java)
+            startActivity(intent)
         }
     }
 }

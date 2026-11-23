@@ -32,7 +32,7 @@ class OrcamentoActivity : AppCompatActivity() {
             binding.etDescricao.requestFocus()
             return false
         }
-        binding.etDescricao.error = null
+
 
         val horas = binding.etHoras.text.toString().trim().replace(',','.')
             .toDoubleOrNull()
@@ -43,8 +43,6 @@ class OrcamentoActivity : AppCompatActivity() {
             return false
         }
 
-        binding.etHoras.error = null
-
         val precoHora = binding.etPrecoHora.text.toString().trim().replace(',',
             '.').toDoubleOrNull()
 
@@ -54,12 +52,10 @@ class OrcamentoActivity : AppCompatActivity() {
             return false
         }
 
-        binding.etPrecoHora.error = null
-
         val despesas = binding.etDespesas.text.toString().trim().replace(','
             ,'.').toDoubleOrNull()
 
-        if (despesas == null || !despesas.isFinite() || despesas <= 0) {
+        if (despesas == null || !despesas.isFinite() || despesas < 0) {
             binding.etDespesas.error = getString(R.string.erro_despesas_invalidas)
             binding.etDespesas.requestFocus()
             return false
